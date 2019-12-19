@@ -10,6 +10,9 @@
 
 ## How To Use
 
-install Homebrew -> make homebrew
+install Homebrew 
+```
+	make homebrew
+```
 
 ## To Do
