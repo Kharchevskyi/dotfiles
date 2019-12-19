@@ -10,5 +10,6 @@
 
 ## How To Use
 
+install Homebrew -> make homebrew
 
 ## To Do
