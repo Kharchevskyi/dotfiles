@@ -12,7 +12,7 @@
 
 install Homebrew 
 ```
-	make homebrew
+make homebrew
 ```
 
 ## To Do
