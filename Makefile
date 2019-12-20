@@ -22,6 +22,7 @@ zgen:
 .PHONY: link
 link:
 	ln -sfnv "$(DOT_FOLDER)/dots/zshrc" ~/.zshrc
+	ln -sfnv "$(DOT_FOLDER)/dots/gitconfig" ~/.gitconfig
 
 # clean zgen directory
 .PHONY: clean
