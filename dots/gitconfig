@@ -1,0 +1,5 @@
+[user]
+	name = Anton Kharchevskyi
+	email = kharchevskyi.a@gmail.com
+[merge]	
+	tool = opendiff
