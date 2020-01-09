@@ -23,7 +23,8 @@ zgen:
 link:
 	ln -sfnv "$(DOT_FOLDER)/dots/zshrc" ~/.zshrc
 	ln -sfnv "$(DOT_FOLDER)/dots/gitconfig" ~/.gitconfig
-
+	ln -sfnv "$(DOT_FOLDER)/dots/vimrc" ~/.vimrc
+	
 # clean zgen directory
 .PHONY: clean
 clean:
