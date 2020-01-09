@@ -1,6 +1,6 @@
 # Aliases for ZSH
 
-alias reload="exec $SHELL"
+alias rd="exec $SHELL"
 
 # git
 alias gs = "git status"

@@ -4,14 +4,8 @@ DOT_FOLDER = $(shell pwd)
 all: clean install
 
 .PHONY: install
-install: zgen link
-	#chsh -s $(which zsh)
-
-
-# set zsh as default terminal
-.PHONY: zsh
-zsh:
-	chsh -s $(which zsh)	
+install: homebrew ruby zgen link
+	vim +PlugInstall! +qa
 
 # instal zgen plugins for zsh
 .PHONY: zgen
