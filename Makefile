@@ -18,7 +18,7 @@ link:
 	ln -sfnv "$(DOT_FOLDER)/dots/zshrc" ~/.zshrc
 	ln -sfnv "$(DOT_FOLDER)/dots/gitconfig" ~/.gitconfig
 	ln -sfnv "$(DOT_FOLDER)/dots/vimrc" ~/.vimrc
-	
+	ln -sfnv "$(DOT_FOLDER)/zsh" ~/.zsh
 # clean zgen directory
 .PHONY: clean
 clean:
@@ -31,8 +31,8 @@ ruby:
 # clean install brew
 .PHONY: homebrew
 homebrew: 
-	chmod +x install.sh
-	./install.sh 
+	chmod +x installXcode.sh
+	./installXcode.sh 
 	
 
 

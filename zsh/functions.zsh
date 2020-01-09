@@ -1,3 +1,7 @@
+function cdls {
+    builtin cd "$argv[-1]" && ls "${(@)argv[1,-2]}"
+}
+
 function clean {
 	set +feo pipefail
 	set -o nullglob

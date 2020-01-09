@@ -12,27 +12,8 @@ plugins=(git xcode)
 
 source $ZSH/oh-my-zsh.sh
 
-
-# TODO: Include scripts 
-# include '/Users/antonkharchevskyi/Documents/dotfiles/Scripts' 
-# Load custom aliases
-
-alias reload="exec $SHELL"
-alias o='open'
-
-# git
-alias gs="git status"
-alias gl="git log"
-alias gca="git commit -am"
-
-#bundle
-alias bef='bundle exec fastlane'
-# creates Brewfile in the current directory from currently-installed packages
-alias bbd='brew bundle dump'
-alias be='bundle exec'
+include $HOME/.zsh/functions.zsh
+include $HOME/.zsh/aliases.zsh
 
 
-function cdls {
-    builtin cd "$argv[-1]" && ls "${(@)argv[1,-2]}"
-}
 
