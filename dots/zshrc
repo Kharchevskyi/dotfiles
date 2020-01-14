@@ -15,5 +15,5 @@ source $ZSH/oh-my-zsh.sh
 include $HOME/.zsh/functions.zsh
 include $HOME/.zsh/aliases.zsh
 
-
+PROMPT='${ret_status} %{$fg[cyan]%}%~%{$reset_color%} $(git_prompt_info)'
 
