@@ -1,19 +1,18 @@
+# helper function
 function include {
     [[ -s "$1" ]] && source "$1" || echo "$1 not found"
 } 
 
-
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/antonkharchevskyi/.oh-my-zsh"
- 
+export ZSH="/Users/kharchevskyi/.zshrc"
+
 ZSH_THEME="robbyrussell"
 
-plugins=(git xcode)
-
-source $ZSH/oh-my-zsh.sh
-
+# functions and aliases
 include $HOME/.zsh/functions.zsh
 include $HOME/.zsh/aliases.zsh
+include $HOME/.zsh/zgen-setup.zsh
 
+# Prompt
 PROMPT='${ret_status} %{$fg[cyan]%}%~%{$reset_color%} $(git_prompt_info)'
 

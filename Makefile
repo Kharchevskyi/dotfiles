@@ -1,7 +1,7 @@
 DOT_FOLDER = $(shell pwd)
 
 .PHONY: all
-all: clean install
+all: install
 
 .PHONY: install
 install: homebrew ruby zgen link
@@ -19,20 +19,21 @@ link:
 	ln -sfnv "$(DOT_FOLDER)/dots/gitconfig" ~/.gitconfig
 	ln -sfnv "$(DOT_FOLDER)/dots/vimrc" ~/.vimrc
 	ln -sfnv "$(DOT_FOLDER)/zsh" ~/.zsh
+
 # clean zgen directory
 .PHONY: clean
 clean:
 	rm -rf ~/.zgen
 
+# install ruby and bundler
 .PHONY: ruby
 ruby:
 	\curl -sSL https://get.rvm.io | bash -s stable --ruby
+	gem install bundler
 
-# clean install brew
+# clean install brew and xcode command line
 .PHONY: homebrew
 homebrew: 
-	chmod +x installXcode.sh
-	./installXcode.sh 
-	
-
-
+	chmod +x scripts/installXcode.sh
+	./scripts/installXcode.sh 
+	brew bundle
