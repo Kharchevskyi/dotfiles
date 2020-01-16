@@ -37,3 +37,11 @@ homebrew:
 	chmod +x scripts/installXcode.sh
 	./scripts/installXcode.sh 
 	brew bundle
+
+# update current brewfile
+.PHONY: update_brewfile
+update_brewfile:
+	@echo Updating current Brewfile
+	rm -rf Brewfile
+	brew bundle dump
+	vim Brewfile
