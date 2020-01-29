@@ -1,5 +1,15 @@
-function cdls {
+function cdl {
     builtin cd "$argv[-1]" && ls "${(@)argv[1,-2]}"
+}
+
+function cleandd {
+	set +feo pipefail  
+        set -o nullglob
+        set -o globdots
+
+	echo 'Cleanup XCode Derived Data and Archives...'
+        noglob rm -rf ~/Library/Developer/Xcode/DerivedData/* 2>/dev/null
+        noglob rm -rf ~/Library/Developer/Xcode/Archives/* 2>/dev/null
 }
 
 function clean {
@@ -32,13 +42,10 @@ function clean {
 	noglob rm -rf ~/Library/Developer/Xcode/Archives/* 2>/dev/null
 
 	echo 'Cleanup Homebrew Cache...'
-	brew cleanup --force -s
+	brew cleanup 
 	brew cask cleanup
 	noglob rm -rf /Library/Caches/Homebrew/* 2>/dev/null
 	brew tap --repair
-
-	echo 'Cleanup any old versions of gems'
-	gem cleanup
 
 	echo 'Purge inactive memory...'
 	sudo purge

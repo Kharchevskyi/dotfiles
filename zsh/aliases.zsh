@@ -11,3 +11,5 @@ alias bef='bundle exec fastlane'
 # creates Brewfile in the current directory from currently-installed packages
 alias bbd='brew bundle dump'
 alias be='bundle exec'
+
+alias dot='cd /Users/kharchevskyi/Documents/dotfiles && l'
