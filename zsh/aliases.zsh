@@ -12,5 +12,5 @@ alias bef='bundle exec fastlane'
 alias bbd='brew bundle dump'
 alias be='bundle exec'
 
-alias pi = 'pod install'
+alias pi='pod install'
 alias dot='cd /Users/kharchevskyi/Documents/dotfiles && l'
