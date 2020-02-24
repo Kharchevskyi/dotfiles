@@ -9,6 +9,7 @@ endif
 call plug#begin('~/.vim/plugged')
 Plug 'tomasr/molokai'
 Plug 'sheerun/vim-polyglot'
+Plug 'stephpy/vim-yaml'
 call plug#end()
 
 syntax enable
