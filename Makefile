@@ -44,4 +44,6 @@ update_brewfile:
 	@echo Updating current Brewfile
 	rm -rf Brewfile
 	brew bundle dump
+	git commit -am 'Update Brewfile'
+	git push
 	vim Brewfile
