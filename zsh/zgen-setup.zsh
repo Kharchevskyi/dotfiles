@@ -16,7 +16,7 @@ function load-plugin-list() {
     zgen oh-my-zsh plugins/globalias
     #zgen oh-my-zsh plugins/vi-mode
     zgen oh-my-zsh plugins/xcode
-
+    zgen oh-my-zsh plugins/sublime
     # Save it all to init script
     zgen save
 }
