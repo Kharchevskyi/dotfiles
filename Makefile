@@ -34,9 +34,7 @@ ruby:
 # clean install brew and xcode command line
 .PHONY: homebrew
 homebrew: 
-	chmod +x scripts/installXcode.sh
-	./scripts/installXcode.sh 
-	brew bundle
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # update current brewfile
 .PHONY: update_brewfile
