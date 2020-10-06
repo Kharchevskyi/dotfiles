@@ -3,16 +3,23 @@
 <p align="left">
   <a href="#description">Description</a> •
   <a href="#how-to-use">How To Use</a> •
-  <a href="#to-do-next">To Do</a> •
 </p>
 
 ## Description
 
 ## How To Use
 
-install Homebrew 
+run
 ```
-make homebrew
+make
 ```
 
-## To Do
+Instal zgen plugins for zsh. Additional info https://github.com/tarjoilija/zgen
+```
+make zgen
+```
+
+Install Brew system dependencies from *Brewfile*
+```
+brew bundle
+```
