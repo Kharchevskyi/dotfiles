@@ -9,7 +9,12 @@
 
 ## How To Use
 
-run
+Install Homebrew
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
+
+then run make to install dependencies
 ```
 make
 ```

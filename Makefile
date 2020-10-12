@@ -4,7 +4,7 @@ DOT_FOLDER = $(shell pwd)
 all: install
 
 .PHONY: install
-install: homebrew ruby zgen link
+install: ruby zgen link
 	vim +PlugInstall! +qa
 
 # instal zgen plugins for zsh
