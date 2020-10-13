@@ -9,8 +9,8 @@ alias gca="git commit -am"
 #bundle
 alias bef='bundle exec fastlane'
 # creates Brewfile in the current directory from currently-installed packages
-alias bbd='brew bundle dump'
+alias bbd='rm -rf Brewfile && brew bundle dump'
 alias be='bundle exec'
 
 alias pi='pod install'
-alias dot='cd /Users/kharchevskyi/Documents/dotfiles && l'
+alias dot='cd $HOME/Documents/dotfiles && l'
