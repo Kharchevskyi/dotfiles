@@ -5,8 +5,6 @@
   <a href="#how-to-use">How To Use</a> •
 </p>
 
-## Description
-
 ## How To Use
 
 Install Homebrew
